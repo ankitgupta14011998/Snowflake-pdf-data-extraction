@@ -9,7 +9,7 @@ use warehouse quickstart;
 
 create or replace stage pdf_external
 url="s3://sfquickstarts/Analyze PDF Invoices/Invoices/"
-directory = (enable = TRUE);
+directory = (enable = TRUE); --Specifies whether to add a directory table to the stage. When the value is TRUE, a directory table is created with the stage.
 
 ls @pdf_external;
 
